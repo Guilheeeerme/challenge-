@@ -1,7 +1,6 @@
-service: challenge
+service: take-blip-challenge
 
-frameworkVersion: '2 || 3'
-
+frameworkVersion: '2'
 
 provider:
   name: aws
