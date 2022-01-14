@@ -1,0 +1,16 @@
+{
+  "name": "take-blip-challenge",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "sls offline start -s local --config-file serverless.yml"
+  },
+  "repository": "https://github.com/Guilheeeerme/take-blip-challenge",
+  "author": "Guilherme de Moura Neto",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/core": "^3.5.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^8.3.1"
+  }
+}

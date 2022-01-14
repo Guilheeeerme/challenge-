@@ -1,7 +1,6 @@
-service: challenge
+service: take-blip-challenge
 
-frameworkVersion: '2 || 3'
-
+frameworkVersion: '2'
 
 provider:
   name: aws
@@ -9,5 +8,17 @@ provider:
   lambdaHashingVersion: 20201221
 
 functions:
-  hello:
-    handler: handler.hello
+  getRepositories:
+    handler: src/Api/handler.getRepositories
+    events:
+      - http:
+          path: /repositorios-takeblip
+          method: GET
+
+custom:  
+  serverless-offline:
+    host: 0.0.0.0
+    port: 3000
+
+plugins:
+  - serverless-offline
