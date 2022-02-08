@@ -19,18 +19,12 @@ const apiOctokit = async () => {
       return mappedRepositories;
     });
 
-  const csharp_repositorie01 = csharpRepositories[0];
-  const csharp_repositorie02 = csharpRepositories[1];
-  const csharp_repositorie03 = csharpRepositories[2];
-  const csharp_repositorie04 = csharpRepositories[3];
-  const csharp_repositorie05 = csharpRepositories[4];
-
   return {
-    csharp_repositorie01,
-    csharp_repositorie02,
-    csharp_repositorie03,
-    csharp_repositorie04,
-    csharp_repositorie05,
+    csharp_repositorie01: csharpRepositories[0],
+    csharp_repositorie02: csharpRepositories[1],
+    csharp_repositorie03: csharpRepositories[2],
+    csharp_repositorie04: csharpRepositories[3],
+    csharp_repositorie05: csharpRepositories[4]
   };
 };
 
